@@ -1,4 +1,5 @@
-require File.expand_path(File.dirname(__FILE__) + '/neo')
+require './dice_set'
+
 
 # Implement a DiceSet Class here:
 #

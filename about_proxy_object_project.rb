@@ -1,4 +1,5 @@
-require File.expand_path(File.dirname(__FILE__) + '/neo')
+require './Proxy'
+
 
 # Project: Create a Proxy Class
 #
@@ -15,7 +16,8 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 class Proxy
   def initialize(target_object)
     @object = target_object
-    # ADD MORE CODE HERE
+   @messages = [] # ADD MORE CODE HERE
+   @calls = Hash.new(0)
   end
 
   # WRITE CODE HERE
